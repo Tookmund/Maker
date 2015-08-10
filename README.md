@@ -15,28 +15,28 @@ This project is an attempt to create a version of BSD's makefile snippets that c
 Recommended Usage
 ----------------
 Assuming a hierarchy that looks something like this:
-
-	myproject/
-        		src/
-            		main.c
-        		doc/
-             		README
-
+````
+myproject/
+        	src/
+            	main.c
+        	doc/
+            	README
+````
 1. Obtain the makefile snippets you need from this repository 
 	(in this case c-inst.mk)
 2. Check the dependencies of these Makefiles and add them
 	(in this case cc-inst.mk relies on cc.mk)
 3. Put them in a folder called make so that the file hierarchy now looks like this:
-
-	myproject/
-		src/
-			main.c
-        		doc/
-            		README
-        		make/
-            		c-inst.mk
-           		cc.mk
-
+````
+myproject/
+	src/
+		main.c
+        	doc/
+            	README
+        	make/
+            	c-inst.mk
+           	cc.mk
+````
 4. Add a Makefile to the top directory. For this example it would look like:
 
 ````
