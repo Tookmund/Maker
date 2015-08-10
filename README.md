@@ -22,11 +22,11 @@ Assuming a hierarchy that looks something like this:
         		doc/
              		README
 
-1a. Obtain the makefile snippets you need from this repository 
+1. Obtain the makefile snippets you need from this repository 
 	(in this case c-inst.mk)
-1b. Check the dependencies of these Makefiles and add them
+2. Check the dependencies of these Makefiles and add them
 	(in this case cc-inst.mk relies on cc.mk)
-2. Put them in a folder called make so that the file hierarchy now looks like this:
+3. Put them in a folder called make so that the file hierarchy now looks like this:
 
 	myproject/
 		src/
@@ -37,7 +37,7 @@ Assuming a hierarchy that looks something like this:
             		c-inst.mk
            		cc.mk
 
-3. Add a Makefile to the top directory. For this example it would look like:
+4. Add a Makefile to the top directory. For this example it would look like:
 
 ````
 # Makefile for myproject
