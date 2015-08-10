@@ -31,11 +31,11 @@ myproject/
 myproject/
 	src/
 		main.c
-        	doc/
-            	README
-        	make/
-            	c-inst.mk
-           	cc.mk
+	doc/
+		README
+	make/
+		c-inst.mk
+		cc.mk
 ````
 4. Add a Makefile to the top directory. For this example it would look like:
 
