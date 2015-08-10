@@ -1,5 +1,5 @@
 MAKER
-====
+======
 A Replacement for Complex Build Systems
 ---------------------------------------
 
