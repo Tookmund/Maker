@@ -4,10 +4,19 @@
 
 INST ::= /usr/local/bin
 CFLAGS ::= -Wall
+
 ${PROG}: ${FILES} cc
 	${CC} ${CFLAGS} ${FILES} -o ${PROG}
 
 install: ${PROG}
-	install -D ${INST} ${PROG} 
+	install ${INST} ${PROG} 
 
+uninstall:
+	rm -f ${INST}/${PROG}
+
+deinstall: uninstall
+
+clean:
+	rm ${PROG}
+	
 	
