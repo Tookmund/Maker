@@ -39,14 +39,15 @@ Assuming a hierarchy that looks something like this:
 
 3. Add a Makefile to the top directory. For this example it would look like:
 
-	# Makefile for myproject
-	# Using Maker v0.1
+````
+# Makefile for myproject
+# Using Maker v0.1
 	
-	PROG=myproject
-	FILES=src/main.c
+PROG=myproject
+FILES=src/main.c
 	
-	.include make/c-inst.mk
-
+.include make/c-inst.mk
+````
 
           
             
