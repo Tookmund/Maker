@@ -26,17 +26,7 @@ myproject/
 	(in this case c-inst.mk)
 2. Check the dependencies of these Makefiles and add them
 	(in this case cc-inst.mk relies on cc.mk)
-3. Put them in a folder called make so that the file hierarchy now looks like this:
-````
-myproject/
-	src/
-		main.c
-	doc/
-		README
-	make/
-		c-inst.mk
-		cc.mk
-````
+3. Put them in a folder called maker
 4. Add a Makefile to the top directory. For this example it would look like:
 
 ````
@@ -46,7 +36,7 @@ myproject/
 PROG=myproject
 FILES=src/main.c
 	
-.include make/c-inst.mk
+include make/c-inst.mk
 ````
 
           
