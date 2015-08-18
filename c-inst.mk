@@ -8,15 +8,13 @@ CFLAGS ::= -Wall
 ${PROG}: ${FILES} cc
 	${CC} ${CFLAGS} ${FILES} -o ${PROG}
 
-install: ${PROG}
+c-inst-install: ${PROG}
 	install ${INST} ${PROG} 
 
-uninstall:
+c-inst-uninstall:
 	rm -f ${INST}/${PROG}
 
-deinstall: uninstall
-
-clean:
+c-inst-clean:
 	rm ${PROG}
 	
 	
