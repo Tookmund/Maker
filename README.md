@@ -37,6 +37,13 @@ PROG=myproject
 FILES=../src/main.c
 	
 include c-inst.mk
+
+install: c-inst-install
+
+uninstall: c-inst-uninstall
+deinstall: uninstall
+
+clean: c-inst-clean
 ````
           
             
