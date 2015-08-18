@@ -27,17 +27,16 @@ myproject/
 2. Check the dependencies of these Makefiles and add them
 	(in this case cc-inst.mk relies on cc.mk)
 3. Put them in a folder called maker
-4. Add a Makefile to the top directory. For this example it would look like:
+4. Add a Makefile to the maker directory. For this example it would look like:
 
 ````
 # Makefile for myproject
 # Using Maker v0.1
 	
 PROG=myproject
-FILES=src/main.c
+FILES=../src/main.c
 	
-include make/c-inst.mk
+include c-inst.mk
 ````
-
           
             
