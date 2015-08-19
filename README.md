@@ -22,20 +22,24 @@ myproject/
         	doc/
             	README
 ````
-1. Obtain the makefile snippets you need from this repository 
+1. Obtain the maker snippets you need from this repository 
 	(in this case c-inst.mk)
 2. Check the dependencies of these Makefiles and add them
 	(in this case cc-inst.mk relies on cc.mk)
 3. Put them in a folder called maker
-4. Add a Makefile to the maker directory. For this example it would look like:
+4. Add a Makefile to the maker directory
+5. Check the ````Requires```` header of each maker snippet and declare every variable it needs
+6. Add common targets like ````build```` ````all```` and/or ````install```` relying on the targets defined in the maker snippets
 
+
+The Makefile you end up with should look something like this.
 ````
 # Makefile for myproject
-# Using Maker v0.1
+# Using Maker
 	
 PROG=myproject
 FILES=../src/main.c
-	
+
 include c-inst.mk
 
 install: c-inst-install
