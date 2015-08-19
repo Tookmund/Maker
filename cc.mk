@@ -6,9 +6,7 @@
 # None
 #
 # Requires
-# None
-
-CC= cc
+# CC = C compiler
 
 cc.lock:
 	touch cc.lock
