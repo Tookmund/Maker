@@ -1,9 +1,14 @@
 # Install simple C programs
 # From Maker
 # https://github.com/Tookmund/Maker
-
-INST ::= /usr/local/bin
-CFLAGS ::= -Wall
+#
+# Dependencies
+# cc.mk
+# 
+# Requires
+# PROG = Program name
+# FILES = C files comprising $PROG
+# CINST = Binary install location
 
 ${PROG}: ${FILES} cc
 	${CC} ${CFLAGS} ${FILES} -o ${PROG}

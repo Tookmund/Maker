@@ -1,7 +1,15 @@
 # C Compiler Check
 # From Maker
 # https://github.com/Tookmund/Maker
+# 
+# Dependencies
+# None
+#
+# Requires
+# None
+
 CC= cc
+
 cc.lock:
 	touch cc.lock
 
