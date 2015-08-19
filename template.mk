@@ -3,7 +3,7 @@
 # https://github.com/Tookmund/Maker
 # 
 # Dependencies
-# [Makerfiles]
+# [Maker snippets]
 #
 # Requires
 # [Variables]
